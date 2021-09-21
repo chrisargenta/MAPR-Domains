@@ -1,0 +1,13 @@
+<project default="package">
+
+	<target name="compile">
+		<javac srcdir="src" destdir="bin" includeantruntime="false" />
+	</target>
+
+	<target name="package" depends="compile">
+		<jar destfile="lib/mapr_domains.jar">
+			<fileset dir="bin" />
+			<fileset dir="src" excludes="**/*.java" />
+		</jar>
+	</target>
+</project>

@@ -1,0 +1,6 @@
+agents_max=5
+scene_count=1
+teams_max=1
+agents_min=1
+teams_min=1
+goals=10
